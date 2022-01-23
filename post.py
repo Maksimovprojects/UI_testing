@@ -9,5 +9,5 @@ class Post:
             'content': self.content,
         }
 
-    def repr(self):
+    def __repr__(self):
         return f'My {self.title} has {self.content}'

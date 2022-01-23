@@ -16,4 +16,4 @@ class PostTest(TestCase):
     def test_repr(self):
         p = Post("Test", "Test Content")
         expected = "My Test has Test Content"
-        self.assertEqual(expected, p.repr())
+        self.assertEqual(expected, p.__repr__())
