@@ -3,7 +3,7 @@ from blog import Blog
 
 
 class BlogTest(TestCase):
-    def  (self):
+    def test_create_blog(self):
         b = Blog('Test', 'Test Author')
         self.assertEqual('Test', b.title)
         self.assertEqual('Test Author', b.author)
@@ -22,3 +22,6 @@ class BlogTest(TestCase):
         b2.posts = ['test', 'another']
         self.assertEqual(b.__repr__(), 'Test by Test Author (1 post)')
         self.assertEqual(b2.__repr__(), 'My Day by Rolf (2 posts)')
+
+
+
