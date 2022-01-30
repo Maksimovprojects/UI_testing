@@ -7,6 +7,7 @@ def menu():
     print_blogs()
     selection = input(MENU_PROPT)
 
+
 def print_blogs():
     for key, blog in blogs.items():
         print('- {}'.format(blog))
